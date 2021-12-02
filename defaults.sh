@@ -133,5 +133,5 @@ defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen 1
 
 
 # Hiding the morons file locations
-chflags hidden ~/Creative\ Cloud\ Files
-chflags hidden ~/Pictures/VueScan
+# chflags hidden ~/Creative\ Cloud\ Files
+# chflags hidden ~/Pictures/VueScan
