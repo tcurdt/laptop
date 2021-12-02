@@ -230,7 +230,7 @@ defaults write com.apple.dock show-recents -bool false
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
+# sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
 # Load new settings before rebuilding the index
 # killall mds > /dev/null 2>&1
@@ -361,39 +361,39 @@ defaults write com.apple.screencapture type -string "png"
 
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use a modified version of the Solarized Dark theme by default in Terminal.app
-osascript <<EOD
-tell application "Terminal"
-  local allOpenedWindows
-  local initialOpenedWindows
-  local windowID
-  set themeName to "Solarized Dark xterm-256color"
-  (* Store the IDs of all the open terminal windows. *)
-  set initialOpenedWindows to id of every window
-  (* Open the custom theme so that it gets added to the list
-     of available terminal themes (note: this will open two
-     additional terminal windows). *)
-  do shell script "open '$HOME/init/" & themeName & ".terminal'"
-  (* Wait a little bit to ensure that the custom theme is added. *)
-  delay 1
-  (* Set the custom theme as the default terminal theme. *)
-  set default settings to settings set themeName
-  (* Get the IDs of all the currently opened terminal windows. *)
-  set allOpenedWindows to id of every window
-  repeat with windowID in allOpenedWindows
-    (* Close the additional windows that were opened in order
-       to add the custom theme to the list of terminal themes. *)
-    if initialOpenedWindows does not contain windowID then
-      close (every window whose id is windowID)
-    (* Change the theme for the initial opened terminal windows
-       to remove the need to close them in order for the custom
-       theme to be applied. *)
-    else
-      set current settings of tabs of (every window whose id is windowID) to settings set themeName
-    end if
-  end repeat
-end tell
-EOD
+# # Use a modified version of the Solarized Dark theme by default in Terminal.app
+# osascript <<EOD
+# tell application "Terminal"
+#   local allOpenedWindows
+#   local initialOpenedWindows
+#   local windowID
+#   set themeName to "Solarized Dark xterm-256color"
+#   (* Store the IDs of all the open terminal windows. *)
+#   set initialOpenedWindows to id of every window
+#   (* Open the custom theme so that it gets added to the list
+#      of available terminal themes (note: this will open two
+#      additional terminal windows). *)
+#   do shell script "open '$HOME/init/" & themeName & ".terminal'"
+#   (* Wait a little bit to ensure that the custom theme is added. *)
+#   delay 1
+#   (* Set the custom theme as the default terminal theme. *)
+#   set default settings to settings set themeName
+#   (* Get the IDs of all the currently opened terminal windows. *)
+#   set allOpenedWindows to id of every window
+#   repeat with windowID in allOpenedWindows
+#     (* Close the additional windows that were opened in order
+#        to add the custom theme to the list of terminal themes. *)
+#     if initialOpenedWindows does not contain windowID then
+#       close (every window whose id is windowID)
+#     (* Change the theme for the initial opened terminal windows
+#        to remove the need to close them in order for the custom
+#        theme to be applied. *)
+#     else
+#       set current settings of tabs of (every window whose id is windowID) to settings set themeName
+#     end if
+#   end repeat
+# end tell
+# EOD
 
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # i.e. hover over a window and start typing in it without clicking first
