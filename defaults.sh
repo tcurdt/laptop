@@ -96,10 +96,16 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 # Show indicator lights for open applications in the Dock
 # defaults write com.apple.dock show-process-indicators -bool true
 
-
-
-
-
+defaults write com.apple.dock autohide 1
+defaults write com.apple.dock autohide-time-modifier 1
+defaults write com.apple.dock largesize 68
+defaults write com.apple.dock tilesize 28
+defaults write com.apple.dock magnification 1
+defaults write com.apple.dock orientation left
+defaults write com.apple.dock showAppExposeGestureEnabled 1
+defaults write com.apple.dock showLaunchpadGestureEnabled 0
+defaults write com.apple.dock showMissionControlGestureEnabled 1
+killall Dock
 
 
 # Safari
