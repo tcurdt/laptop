@@ -1,0 +1,14 @@
+cmd+shift+p+r + until chime - reset nvram
+cmd+v - verbose
+shift - safe mode
+cmd+s - single user
+cmd+r - recovery
+alt - startup volume
+d - hardware test
+c - boot from external
+n - netboot
+alt+n - netboot (default)
+t - target mode
+
+sudo nvram boot-args="-v&"
+sudo nvram boot-args=
