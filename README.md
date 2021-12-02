@@ -33,7 +33,7 @@ Ideally all fonts were installed via homebrew. Otherwise check for them.
 
 ## install most software via homebrew
 
-    brew bundle [--file ./Brewfile]
+    brew bundle --force [--file ./Brewfile]
 
 ## copy old machine
 
@@ -51,18 +51,20 @@ Ideally all fonts were installed via homebrew. Otherwise check for them.
 
     launchctl load -w ~/Library/LaunchAgents/org.vafer.setenv.openscad.plist
 
-
 ## new ssh key
 
     ssh-keygen -t rsa -b 4096 -C "tcurdt@vafer.org"
     ssh-add -K ~/.ssh/id_rsa
 
-##
+## other adjustments
 
 CMD + SHIFT + H and drag the home folder to the sidebar.
 
-# visbug
+## browser plugins
+
+- visbug
+
+# References
 
 https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/?ck_subscriber_id=591519942
-
 https://www.swyx.io/new-mac-setup-2021/
