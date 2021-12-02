@@ -31,6 +31,7 @@ restore "~/.gitignore_global"
 restore "~/.twitter.json"
 restore "~/.npmrc"
 restore "~/.netlify"
+restore "~/Pictures/Wallpapers"
 
 restore "~/.ssh"
 restore "~/.aws"
