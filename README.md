@@ -50,3 +50,14 @@ Ideally all fonts were installed via homebrew. Otherwise check for them.
 ## set env
 
     launchctl load -w ~/Library/LaunchAgents/org.vafer.setenv.openscad.plist
+
+
+## new ssh key
+
+    ssh-keygen -t rsa -b 4096 -C "tcurdt@vafer.org"
+    ssh-add -K ~/.ssh/id_rsa
+
+##
+
+CMD + SHIFT + H and drag the home folder to the sidebar.
+
