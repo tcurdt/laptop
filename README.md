@@ -61,3 +61,8 @@ Ideally all fonts were installed via homebrew. Otherwise check for them.
 
 CMD + SHIFT + H and drag the home folder to the sidebar.
 
+# visbug
+
+https://www.taniarascia.com/setting-up-a-brand-new-mac-for-development/?ck_subscriber_id=591519942
+
+https://www.swyx.io/new-mac-setup-2021/
