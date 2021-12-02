@@ -101,9 +101,6 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
 # defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 # defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
-# Show Status bar in Finder
-defaults write com.apple.finder ShowStatusBar -bool true
-
 # Show Path bar in Finder
 # defaults write com.apple.finder ShowPathbar -bool true
 
@@ -134,7 +131,7 @@ chflags nohidden ~/Library
 
 defaults write com.apple.finder AppleShowAllFiles true
 defaults write com.apple.finder ShowStatusBar -bool true
-defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowPathbar -bool false
 
 # defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
