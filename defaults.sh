@@ -59,6 +59,24 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.threeFingerSwipeGe
 defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 
 
+## Mission Control
+
+# defaults read com.apple.symbolichotkeys
+# defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
+#   -dict-add 44 '{enabled = 1; value = { parameters = (64, 64); type = "modifier"; }; }'
+# defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
+#   -dict-add 46 '{enabled = 1; value = { parameters = (131136, 131136); type = "modifier"; }; }'
+
+killall "System Preferences"
+
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
+  -dict-add 44 "<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>64</integer><integer>64</integer></array><key>type</key><string>modifier</string></dict></dict>"
+
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
+  -dict-add 46 "<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>131136</integer><integer>131136</integer></array><key>type</key><string>modifier</string></dict></dict>"
+
+/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+
 ## Dashboard
 
 # No Dashboard
