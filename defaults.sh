@@ -67,7 +67,7 @@ defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 # defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
 #   -dict-add 46 '{enabled = 1; value = { parameters = (131136, 131136); type = "modifier"; }; }'
 
-killall "System Preferences"
+killall "System Preferences" 2>&1 || true
 
 defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys \
   -dict-add 44 "<dict><key>enabled</key><true/><key>value</key><dict><key>parameters</key><array><integer>64</integer><integer>64</integer></array><key>type</key><string>modifier</string></dict></dict>"
