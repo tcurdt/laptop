@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/<name>.rb
+
 set -e
 
 FROM=${FROM:-/Volumes/Mirror}
@@ -37,28 +39,44 @@ restore "~/Pictures/Wallpapers"
 restore "~/.ssh"
 restore "~/.aws"
 restore "~/.gnupg"
+
 restore "~/Library/LaunchAgents/org.vafer.setenv.openscad.plist"
-# restore "~/Library/Application Support/Google/Chrome"
-restore "~/Library/Application Support/Sublime Text 3"
+
 restore "~/Library/Application Support/Viscosity"
 restore "~/Library/Preferences/com.viscosityvpn.Viscosity.plist"
+
 restore "~/Library/Application Support/Alfred"
-restore "~/Library/Application Support/Resilio Sync"
+restore "~/Library/Caches/com.runningwithcrayons.Alfred"
+restore "~/Library/Cookies/com.runningwithcrayons.Alfred.binarycookies"
+restore "~/Library/Preferences/com.runningwithcrayons.Alfred.plist"
+restore "~/Library/Preferences/com.runningwithcrayons.Alfred-Preferences.plist"
+
 restore "~/Shared"
-# restore "~/Library/Application Support/SuperDuper!"
-# restore "~/Library/Preferences/com.blacey.SuperDuper!.plist"
+restore "~/Library/Application Support/Resilio Sync"
+rm "$HOME/Library/Application Support/Resilio Sync/sync.log."*.zip
+
+
+restore "~/Library/Application Support/SuperDuper!"
+restore "~/Library/Preferences/com.blacey.SuperDuper.plist"
+
 restore "~/Library/Application Support/Charles"
 restore "~/Library/Application Support/Little Snitch"
 restore "~/Library/Application Support/MacDive"
+
 # restore "~/Library/Application Support/Code"
 # restore "~/Library/Preferences/com.microsoft.VSCode.helper.plist"
 # restore "~/Library/Preferences/com.microsoft.VSCode.plist"
 # restore "~/.vscode"
+
 restore "~/Library/Preferences/com.blackpixel.netnewswire.plist"
+
 restore "~/Library/Containers/com.moneymoney-app.retail"
+
 restore "~/Library/Preferences/com.hamrick.vuescan.plist"
 restore "~/Library/Preferences/vuescan.ini"
+
 # restore "~/Books"
+
 restore "~/Library/Preferences/calibre"
 restore "~/Library/Application Support/Faxbot"
 restore "~/Library/Preferences/ch.sudo.cyberduck.plist"

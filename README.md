@@ -39,6 +39,10 @@ Ideally all fonts were installed via homebrew. Otherwise check for them.
 
     FROM=/Volume/Mirror ./restore.sh
 
+## setup shell
+
+    git clone https://github.com/jandamm/zgenom.git "${HOME}/.zgenom"
+
 ## set backgroound
 
     osascript -e 'tell application "Finder" to set desktop picture to (POSIX path of (path to home folder)) & "Pictures/Wallpapers/electric-cloud.jpg" as POSIX file'
