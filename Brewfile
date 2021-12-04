@@ -107,7 +107,7 @@ brew "ocrmypdf"
 # brew "openjdk"
 brew "osxutils"
 brew "parallel"
-# brew "parallels"
+brew "parallels"
 brew "pdfcpu"
 # brew "qt"
 # brew "poppler"
@@ -164,11 +164,13 @@ cask "brave-browser"
 # cask "clean-me"
 # cask "coconutbattery"
 cask "coolterm"
+cask "coscreen" # no arm
 cask "cyberduck"
 # cask "darktable"
 # cask "dash"
 # cask "dbeaver-community"
 cask "docker"
+cask "enpass" # no arm
 # cask "epubquicklook" # no arm
 cask "faxbot"
 cask "figma"
@@ -202,7 +204,7 @@ cask "ocenaudio"
 cask "omnidisksweeper"
 # cask "onyx"
 # cask "opencpn" # no arm
-# cask "openscad" # no arm
+cask "openscad" # no arm
 # cask "oracle-jdk"
 # cask "paw"
 # cask "pdftotext" # discontinued
@@ -225,7 +227,8 @@ cask "suspicious-package"
 cask "teamviewer"
 cask "telegram"
 cask "topnotch"
-# cask "transmission-remote-gui"
+cask "transmission-remote-gui"
+cask "ultimaker-cura" # noarm
 # cask "vagrant" # no arm
 # cask "virtualbox"
 # cask "virtualbox-extension-pack"
@@ -243,4 +246,6 @@ cask "font-dejavu-sans-mono-nerd-font"
 # cask "synfigstudio" # 2d
 
 # davinci resolve https://www.blackmagicdesign.com/products/davinciresolve/
-# sleep timer http://sleeptimerapp.com/
+# sleep timer http://sleeptimerapp.com/ # no arm
+# ChiTuBox # no arm
+# coscreen # no arm
