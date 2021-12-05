@@ -238,5 +238,9 @@ cask "font-lobster"
 cask "font-poppins"
 cask "font-dejavu-sans-mono-nerd-font"
 
+# cask "pencil2d" # 2d
+# cask "krita" # 2d
+# cask "synfigstudio" # 2d
+
 # davinci resolve https://www.blackmagicdesign.com/products/davinciresolve/
 # sleep timer http://sleeptimerapp.com/
