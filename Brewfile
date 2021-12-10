@@ -18,7 +18,7 @@ mas "Affinity Photo", id: 824183456
 mas "Affinity Publisher", id: 881418622
 # mas "App Language Chooser", id: 451732904
 # mas "CADReader", id: 1484905765
-# mas "DevCleaner", id: 1388020431
+mas "DevCleaner", id: 1388020431
 # mas "Developer", id: 640199958
 # mas "Discovery", id: 1381004916
 # mas "Disk Speed Test", id: 425264550
@@ -155,11 +155,12 @@ cask "arq"
 # cask "balenaetcher"
 # cask "base" # sqlite no arm
 # cask "betterzip"
-cask "bitbar"
+cask "xbar"
 # cask "blackhole"
 cask "blender"
 cask "brave-browser"
 # cask "calibre" # no arm
+cask "carbon-copy-cloner"
 # cask "charles" # no arm
 # cask "clean-me"
 # cask "coconutbattery"
@@ -176,6 +177,7 @@ cask "faxbot"
 cask "figma"
 # cask "findergo" # no arm
 cask "firefox"
+cask "fork" # gitx paid
 # cask "freecad" # no arm
 # cask "google-chrome"
 # cask "google-cloud-sdk"
@@ -183,7 +185,7 @@ cask "firefox"
 cask "handbrake"
 cask "hex-fiend"
 cask "iina"
-# cask "imageoptim" # no arm
+cask "imageoptim" # no arm
 # cask "intellij-idea-ce"
 # cask "java"
 # cask "keepassxc"
@@ -218,7 +220,7 @@ cask "resilio-sync"
 # cask "rstudio"
 cask "screenflow"
 # cask "sequel-pro" # no arm
-# cask "signal" # no arm
+cask "signal" # no arm
 # cask "skype" # no arm
 cask "spotify"
 cask "sublime-text"
