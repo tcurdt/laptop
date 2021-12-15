@@ -43,7 +43,7 @@ mas "The Unarchiver", id: 425424353
 # mas "Wire", id: 931134707
 mas "Xcode", id: 497799835
 
-
+brew "age"
 brew "ansible"
 # brew "jpeg-xl"
 # brew "aom"
