@@ -69,7 +69,7 @@ brew "exa" # ls
 # brew "harfbuzz"
 brew "ffmpeg"
 # brew "folly"
-# brew "fswatch"
+brew "fswatch"
 # brew "geos"
 # brew "nspr"
 # brew "nss"
